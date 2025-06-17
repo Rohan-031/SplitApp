@@ -98,6 +98,11 @@ mongoose.connect(MONGO_URI)
     console.error("❌ MongoDB connection error:", err.message);
   });
 
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
+
+
 // Routes
 app.use("/api/expenses", expenseRoutes);
 app.use("/api/users", userRoutes);
