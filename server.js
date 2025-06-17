@@ -99,7 +99,7 @@ mongoose.connect(MONGO_URI)
   });
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("Welcome to the SplitApp");
 });
 
 
